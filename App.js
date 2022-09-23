@@ -1,11 +1,12 @@
 import React from "react";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 
-const image = { uri: "https://reactjs.org/logo-og.png" };
+
+var backgroundFloppa = require('./assets/imgone.png');
 
 const App = () => (
   <View style={styles.container}>
-    <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+    <ImageBackground source={backgroundFloppa} resizeMode="cover" style={styles.image}>
       <Text style={styles.text}>Inside</Text>
     </ImageBackground>
   </View>
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
-    justifyContent: "center"
+    justifyContent: "space-between"
   },
   text: {
     color: "white",
