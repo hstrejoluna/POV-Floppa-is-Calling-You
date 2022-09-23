@@ -15,8 +15,16 @@ const App = () => (
       <View style={styles.panel}>
       <Image source={endCall} style={{width: 100, height: 100}} />
         <Image source={acceptCall} style={{width: 100, height: 100}} />
-
       </View>
+      <View Style={styles.panelText}>
+        <Text style={{color: 'white', fontSize: 18}}>
+          decline
+        </Text>
+        <Text style={{color: 'white', fontSize: 18}}>
+          accept
+        </Text>
+      </View>
+
     </ImageBackground>
   </View>
 );
@@ -39,7 +47,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     paddingHorizontal: 30,
     height: 150,
-    backgroundColor: 'steelblue',
   },
 });
 
