@@ -1,17 +1,22 @@
 import React from "react";
-import { ImageBackground, StyleSheet, Text, View } from "react-native";
-
-var backgroundFloppa = require("./assets/imgone.png");
+import { ImageBackground, StyleSheet, Image, Text, View } from "react-native";
+import backFloppa from './assets/imgone.png';
+import acceptCall from './assets/accept-call.png';
+import endCall from './assets/end-call.png';
 
 const App = () => (
   <View style={styles.container}>
     <ImageBackground
-      source={backgroundFloppa}
+      source={backFloppa}
       resizeMode='cover'
       style={styles.image}
     >
       <View style={styles.paneltop}></View>
-      <View style={styles.panel}></View>
+      <View style={styles.panel}>
+      <Image source={endCall} style={{width: 100, height: 100}} />
+        <Image source={acceptCall} style={{width: 100, height: 100}} />
+
+      </View>
     </ImageBackground>
   </View>
 );
