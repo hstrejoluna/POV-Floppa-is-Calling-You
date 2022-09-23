@@ -10,6 +10,7 @@ const App = () => (
       resizeMode='cover'
       style={styles.image}
     >
+      <View style={styles.paneltop}></View>
       <View style={styles.panel}></View>
     </ImageBackground>
   </View>
@@ -23,9 +24,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "flex-end",
   },
-  panel:{
+  paneltop:{
     flexDirection: "row",
     height: 120,
+    backgroundColor: 'skyblue',
+  },
+  panel:{
+    flexDirection: "row",
+    height: 150,
     backgroundColor: 'steelblue',
   },
 });
