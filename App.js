@@ -36,6 +36,8 @@ const styles = StyleSheet.create({
   },
   panel:{
     flexDirection: "row",
+    justifyContent: "space-between",
+    paddingHorizontal: 30,
     height: 150,
     backgroundColor: 'steelblue',
   },
